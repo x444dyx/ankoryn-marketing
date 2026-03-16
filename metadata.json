@@ -1,0 +1,5 @@
+{
+  "name": "Ankoryn - AI Workspace OS",
+  "description": "Switch AI models without losing context. Ankoryn separates workspace memory from models, allowing seamless transitions between GPT, Claude, Gemini, and more.",
+  "requestFramePermissions": []
+}
