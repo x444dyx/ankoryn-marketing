@@ -17,15 +17,19 @@ export default function CTA() {
             Stop restarting AI. <br />
             <span className="text-emerald-400">Start building workspaces.</span>
           </h2>
+
           <p className="text-zinc-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
             Join the developers building persistent AI workflows with Ankoryn. 
             Get started with your first workspace today.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform flex items-center justify-center gap-2">
+            <a
+              href="https://chat.ankoryn.com"
+              className="w-full sm:w-auto bg-white text-black px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform flex items-center justify-center gap-2"
+            >
               Start Workspace <ChevronRight size={24} />
-            </button>
+            </a>
           </div>
           
           <p className="mt-8 text-zinc-600 text-sm">

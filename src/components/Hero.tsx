@@ -34,19 +34,27 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+            
+            {/* ✅ FIXED BUTTON */}
+            <a
+              href="https://chat.ankoryn.com"
+              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2"
+            >
               Start Workspace <ChevronRight size={20} />
-            </button>
+            </a>
+
+            {/* Demo stays same */}
             <a 
               href="#demo"
               className="w-full sm:w-auto bg-zinc-900 text-white border border-white/10 px-8 py-4 rounded-full font-bold text-lg hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2"
             >
               <Play size={18} fill="currentColor" /> Watch Demo
             </a>
+
           </div>
         </motion.div>
 
-        {/* Hero Visual Placeholder */}
+        {/* Hero Visual */}
         <motion.div
           id="demo"
           initial={{ opacity: 0, scale: 0.95, y: 40 }}
@@ -66,7 +74,7 @@ export default function Hero() {
             />
           </div>
           
-          {/* Floating Model Badges */}
+          {/* Floating Badges */}
           <div className="absolute -top-6 -right-6 bg-black border border-white/10 p-3 rounded-xl shadow-xl flex items-center gap-3 animate-bounce">
             <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-[10px] font-bold">GPT</div>
             <span className="text-xs text-zinc-400">Context Preserved</span>

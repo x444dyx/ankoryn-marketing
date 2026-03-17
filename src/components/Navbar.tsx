@@ -51,9 +51,13 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-zinc-200 transition-colors">
-            Open App
-          </button>
+          <a
+  href="https://chat.ankoryn.com"
+  onClick={() => setIsOpen(false)}
+  className="bg-white text-black px-4 py-3 rounded-xl text-center font-semibold"
+>
+  Open Chat
+</a>
         </div>
 
         {/* Mobile Toggle */}
@@ -81,9 +85,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <button className="bg-white text-black px-4 py-3 rounded-xl text-center font-semibold">
-              Open App
-            </button>
+            <a
+  href="https://chat.ankoryn.com"
+  className="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-zinc-200 transition-colors"
+>
+  Open App
+</a>
           </motion.div>
         )}
       </AnimatePresence>
